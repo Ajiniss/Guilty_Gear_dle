@@ -141,5 +141,122 @@
       "origin": "Nigeria",
       "height": 205,
       "weight": 96
-  }
+  },
+  {
+"id": "answer",
+"name": "Answer",
+"firstGame": "Guilty Gear Xrd Series",
+"mostRecent": "Guilty Gear Strive",
+"gender": "Male",
+"race": ["Human"],
+"origin": "Eastern Chipp Kingdom",
+"height": 183,
+"weight": 65
+},
+
+{
+"id": "kum-haehyun",
+"name": "Kum Haehyun",
+"firstGame": "Guilty Gear Xrd Series",
+"mostRecent": "Guilty Gear Strive",
+"gender": "Female",
+"race": ["Human"],
+"origin": "Korea",
+"height": 246,
+"weight": 199
+},
+
+{
+"id": "leo-whitefang",
+"name": "Leo Whitefang",
+"firstGame": "Guilty Gear Xrd Series",
+"mostRecent": "Guilty Gear Strive",
+"gender": "Male",
+"race": ["Human"],
+"origin": "Germany",
+"height": 196,
+"weight": 83
+},
+{
+"id": "elphelt-valentine",
+"name": "Elphelt Valentine",
+"firstGame": "Guilty Gear Xrd Series",
+"mostRecent": "Guilty Gear Strive",
+"gender": "Female",
+"race": ["Valentine"],
+"origin": "Backyard",
+"height": 168,
+"weight": 0
+},
+
+{
+"id": "ramlethal-valentine",
+"name": "Ramlethal Valentine",
+"firstGame": "Guilty Gear Xrd Series",
+"mostRecent": "Guilty Gear Strive",
+"gender": "Female",
+"race": ["Valentine"],
+"origin": "Backyard",
+"height": 167,
+"weight": 52
+},
+
+{
+"id": "bedman",
+"name": "Bedman",
+"firstGame": "Guilty Gear Xrd Series",
+"mostRecent": "Guilty Gear Xrd Series",
+"gender": "Male",
+"race": ["Human"],
+"origin": "Unknown",
+"height": 156,
+"weight": 45
+},
+  {
+"id": "vernon-e.-groubitz",
+"name": "Vernon E. Groubitz",
+"firstGame": "Guilty Gear Xrd Series",
+"mostRecent": "Guilty Gear Strive",
+"gender": "Male",
+"race": ["Human"],
+"origin": "United States",
+"height": 0,
+"weight": 0
+},
+
+{
+"id": "alyssa",
+"name": "Alyssa",
+"firstGame": "Guilty Gear Xrd Series",
+"mostRecent": "Guilty Gear Strive",
+"gender": "Female",
+"race": ["Human"],
+"origin": "Unknown",
+"height": 0,
+"weight": 0
+},
+
+{
+"id": "randy",
+"name": "Randy",
+"firstGame": "Guilty Gear Xrd Series",
+"mostRecent": "Guilty Gear Strive",
+"gender": "Male",
+"race": ["Human"],
+"origin": "Unknown",
+"height": 0,
+"weight": 0
+},
+
+{
+"id": "daryl",
+"name": "Daryl",
+"firstGame": "Guilty Gear Xrd Series",
+"mostRecent": "Guilty Gear Strive",
+"gender": "Male",
+"race": ["Human"],
+"origin": "Unknown",
+"height": 0,
+"weight": 0
+}
 ]

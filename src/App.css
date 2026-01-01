@@ -1,42 +1,96 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.title {
+  margin: 0 0 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.status {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.content {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.card {
-  padding: 2em;
+.controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0 18px;
 }
 
-.read-the-docs {
-  color: #888;
+.controls select,
+.controls button {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  font-size: 14px;
 }
+
+.controls button {
+  cursor: pointer;
+}
+
+.controls button:disabled,
+.controls select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.tries {
+  margin-top: 14px;
+}
+
+.tableWrap {
+  display: inline-block;  margin: 0 auto;
+  border-radius: 14px;
+  overflow: hidden;}
+
+.guessTable {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.guessTable th,
+.guessTable td {
+  padding: 10px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+}
+
+.guessTable thead th {
+  background: #f5f5f5;
+}
+
+.guessTable th:not(.colName),
+.guessTable td:not(.colName) {
+  color: #000;
+}
+
+.guessTable thead th.colName {
+  background: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.debug {
+  margin-top: 24px;
+  opacity: 0.9;
+}
+
