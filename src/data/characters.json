@@ -1,0 +1,21 @@
+[
+  {
+    "id": "sol-badguy",
+    "name": "Sol Badguy",
+    "firstGame": "GG1",
+    "mostRecent": "Guilty Gear Strive"
+    "gender": "Male",
+    "race": "Gear",
+    "origin": "United States"
+  },
+  {
+  "id": "ky-kiske",
+  "name": "Ky Kiske",
+  "firstGame": "GG1",
+  "mostRecent": "Guilty Gear Strive"
+  "gender": "Male",
+  "race": "Humane",
+  "origin": "France"
+  }
+]
+
