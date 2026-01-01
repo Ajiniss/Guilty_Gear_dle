@@ -6,8 +6,8 @@
     "mostRecent": "Guilty Gear Strive",
     "gender": "Male",
     "race": "Gear",
-    "origin": "United States"
-    "height": "184"
+    "origin": "United States",
+    "height": "184",
     "weight": "74"
   },
 
@@ -18,8 +18,8 @@
   "mostRecent": "Guilty Gear Strive",
   "gender": "Male",
   "race": "Humane",
-  "origin": "France"
-  "height": "178"
+  "origin": "France",
+  "height": "178",
   "weight": "58"
   },
 
@@ -30,8 +30,8 @@
   "mostRecent": "Guilty Gear Strive",
   "gender": "Female",
   "race": "Humane",
-  "origin": "Unknown"
-  "height": "158"
+  "origin": "Unknown",
+  "height": "158",
   "weight": "49"
   },
 
@@ -42,9 +42,11 @@
   "mostRecent": "Guilty Gear Strive",
   "gender": "Male",
   "race": "Humane",
-  "origin": "China"
-  "height": "282"
+  "origin": "China",
+  "height": "282",
   "weight": "55"
   }
+
+ 
 ]
 

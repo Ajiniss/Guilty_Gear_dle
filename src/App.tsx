@@ -93,17 +93,17 @@ export default function App() {
                   </td>
                   <td
                     style={{
-                      backgroundColor: category && category.mostRecent === target.mostRecent ? 'lightgreen' : 'lightcoral',
-                    }}
-                  >
-                    {category ? category.mostRecent : '-'}
-                  </td>
-                  <td
-                    style={{
                       backgroundColor: category && category.firstGame === target.firstGame ? 'lightgreen' : 'lightcoral',
                     }}
                   >
                     {category ? category.firstGame : '-'}
+                  </td>
+                  <td
+                    style={{
+                      backgroundColor: category && category.mostRecent === target.mostRecent ? 'lightgreen' : 'lightcoral',
+                    }}
+                  >
+                    {category ? category.mostRecent : '-'}
                   </td>
                   <td
                     style={{
@@ -125,6 +125,20 @@ export default function App() {
                     }}
                   >
                     {category ? category.origin : '-'}
+                  </td>
+                  <td
+                    style={{
+                      backgroundColor: category && category.height === target.height ? 'lightgreen' : 'lightcoral',
+                    }}
+                  >
+                    {category ? category.height : '-'}
+                  </td>
+                  <td
+                    style={{
+                      backgroundColor: category && category.weight === target.weight ? 'lightgreen' : 'lightcoral',
+                    }}
+                  >
+                    {category ? category.weight : '-'}
                   </td>
                 </tr>
 
