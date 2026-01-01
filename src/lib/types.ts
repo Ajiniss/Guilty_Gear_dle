@@ -7,4 +7,3 @@ export type Character = {
   race: string
   origin: string
 }
-

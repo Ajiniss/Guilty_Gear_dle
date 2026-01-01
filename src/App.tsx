@@ -4,13 +4,11 @@ import { dayKeyLoad } from './lib/day'
 import { dailyCharacter } from './lib/daily'
 import { loadGuesses, saveGuesses } from './lib/storage'
 
-
 export default function App() {
 
   const dayKey = dayKeyLoad()
   const target = dailyCharacter(dayKey)
   const attempts = 10
-
 
   const [selectedId, setSelectedId] = useState<string>(characters[0]?.id ?? '')
   const [guesses, setGuesses] = useState<string[]>(() => loadGuesses(dayKey))
@@ -62,7 +60,6 @@ export default function App() {
           Go
         </button>
 
-
       </div>
 
       <div>
@@ -71,12 +68,36 @@ export default function App() {
       </div>
 
       <h3>History</h3>
-      <ul>
-        {guesses.map((id) => (
-          <li key={id}>{id}
-          </li>))
-        }
-      </ul>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>First Game</th>
+            <th>Most Recent</th>
+            <th>Gender</th>
+            <th>Race</th>
+            <th>Origin</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {guesses.map((id) => {
+            const category = characters.find((c) => c.id === id)
+
+            return (
+              <tr key={id}>
+                <td>{category ? category.name : id}</td>
+                <td>{category ? category.firstGame : '-'}</td>
+                <td>{category ? category.mostRecent : '-'}</td>
+                <td>{category ? category.gender : '-'}</td>
+                <td>{category ? category.race : '-'}</td>
+                <td>{category ? category.origin : '-'}</td>
+              </tr>
+            )
+          })}
+        </tbody>
+      </table>
 
       {/*DEBUG*/}
       <h3>Debug</h3>
