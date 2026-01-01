@@ -3,6 +3,7 @@ import { characters } from './lib/data'
 import { dayKeyLoad } from './lib/day'
 import { dailyCharacter } from './lib/daily'
 import { loadGuesses, saveGuesses } from './lib/storage'
+import './App.css'
 
 export default function App() {
 
@@ -64,8 +65,8 @@ export default function App() {
     const g = Number(guess)
     const t = Number(target)
     if (!Number.isFinite(g) || !Number.isFinite(t)) return ''
-    if (g < t) return '^'
-    if (g > t) return 'v'
+    if (g < t) return '↑'
+    if (g > t) return '↓'
     return ''
   }
 
@@ -98,7 +99,7 @@ export default function App() {
 
       <div>
         {won && <h1>You Rock!</h1>}
-        {!won && noAttempts && <h1>DEFAT...</h1>}
+        {!won && noAttempts && <h1>DEFEAT...</h1>}
       </div>
 
       <div>
@@ -149,8 +150,8 @@ export default function App() {
               const heightS = matchAny(category?.height, target.height)
               const weightS = matchAny(category?.weight, target.weight)
 
-              const heightText = category ? `${category.height}${arrowNum(category.height, target.height)}` : '-'
-              const weightText = category ? `${category.weight}${arrowNum(category.weight, target.weight)}` : '-'
+              const heightText = category ? `${arrowNum(category.height, target.height)}${category.height}cm` : '-'
+              const weightText = category ? `${arrowNum(category.weight, target.weight)}${category.weight}kg` : '-'
 
               return (
                 <tr key={id}>
@@ -177,7 +178,7 @@ export default function App() {
                   </td>
 
                   <td style={{ backgroundColor: bg(heightS) }}>
-                    {heightText} cm
+                    {heightText}
                   </td>
 
                   <td style={{ backgroundColor: bg(weightS) }}>

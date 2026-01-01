@@ -1,69 +1,145 @@
 [
-  {
-    "id": "sol-badguy",
-    "name": "Sol Badguy",
-    "firstGame": "GGML",
-    "mostRecent": "Guilty Gear Strive",
-    "gender": "Male",
-    "race": ["Gear"],
-    "origin": "United States",
-    "height": 184,
-    "weight": 74
-  },
-  {
-    "id": "ky-kiske",
-    "name": "Ky Kiske",
-    "firstGame": "GGML",
-    "mostRecent": "Guilty Gear Strive",
-    "gender": "Male",
-    "race": ["Human", "Gear"],
-    "origin": "France",
-    "height": 178,
-    "weight": 58
-  },
-  {
-    "id": "may",
-    "name": "May",
-    "firstGame": "GGML",
-    "mostRecent": "Guilty Gear Strive",
-    "gender": "Female",
-    "race": ["Human"],
-    "origin": "Unknown",
-    "height": 158,
-    "weight": 49
-  },
-  {
-    "id": "baldhead",
-    "name": "Dr. Baldhead",
-    "firstGame": "GGML",
-    "mostRecent": "Guilty Gear Strive",
-    "gender": "Male",
-    "race": ["Human"],
-    "origin": "China",
-    "height": 282,
-    "weight": 55
-  },
-  {
-    "id": "pot",
-    "name": "Potemkin",
-    "firstGame": "GGML",
-    "mostRecent": "Guilty Gear Strive",
-    "gender": "Male",
-    "race": ["Human"],
-    "origin": "Zepp",
-    "height": 245,
-    "weight": 1212
-  },
-  {
-    "id": "chipp",
-    "name": "Chipp Zanuff",
-    "firstGame": "GGML",
-    "mostRecent": "Guilty Gear Strive",
-    "gender": "Male",
-    "race": ["Human"],
-    "origin": "United States",
-    "height": 183,
-    "weight": 67
+    {
+      "id": "sol-badguy",
+      "name": "Sol Badguy",
+      "firstGame": "GGML",
+      "mostRecent": "Guilty Gear Strive",
+      "gender": "Male",
+      "race": ["Gear"],
+      "origin": "United States",
+      "height": 184,
+      "weight": 74
+    },
+    {
+      "id": "ky-kiske",
+      "name": "Ky Kiske",
+      "firstGame": "GGML",
+      "mostRecent": "Guilty Gear Strive",
+      "gender": "Male",
+      "race": ["Human", "Gear"],
+      "origin": "France",
+      "height": 178,
+      "weight": 58
+    },
+    {
+      "id": "may",
+      "name": "May",
+      "firstGame": "GGML",
+      "mostRecent": "Guilty Gear Strive",
+      "gender": "Female",
+      "race": ["Human"],
+      "origin": "Unknown",
+      "height": 158,
+      "weight": 49
+    },
+    {
+      "id": "baldhead",
+      "name": "Dr. Baldhead",
+      "firstGame": "GGML",
+      "mostRecent": "Guilty Gear Strive",
+      "gender": "Male",
+      "race": ["Human"],
+      "origin": "China",
+      "height": 282,
+      "weight": 55
+    },
+    {
+      "id": "pot",
+      "name": "Potemkin",
+      "firstGame": "GGML",
+      "mostRecent": "Guilty Gear Strive",
+      "gender": "Male",
+      "race": ["Human"],
+      "origin": "Zepp",
+      "height": 245,
+      "weight": 1212
+    },
+    {
+      "id": "chipp",
+      "name": "Chipp Zanuff",
+      "firstGame": "GGML",
+      "mostRecent": "Guilty Gear Strive",
+      "gender": "Male",
+      "race": ["Human"],
+      "origin": "United States",
+      "height": 183,
+      "weight": 67
+    },
+    {
+      "id": "lucy",
+      "name": "Lucy",
+      "firstGame": "Guilty Gear Strive",
+      "mostRecent": "Guilty Gear Strive",
+      "gender": "Female",
+      "race": ["Human"],
+      "origin": "Poland",
+      "height": 0,
+      "weight": 0
+    },
+    {
+      "id": "unika",
+      "name": "Unika",
+      "firstGame": "Guilty Gear Strive",
+      "mostRecent": "Guilty Gear Strive",
+      "gender": "Female",
+      "race": ["Human", "Gear"],
+      "origin": "Unknown",
+      "height": 167,
+      "weight": 59
+    },
+    {
+      "id": "asuka",
+      "name": "Asuka",
+      "firstGame": "Guilty Gear Strive",
+      "mostRecent": "Guilty Gear Strive",
+      "gender": "Male",
+      "race": ["Human"],
+      "origin": "Space",
+      "height": 167,
+      "weight": 58
+    },
+    {
+      "id": "bedman?",
+      "name": "Bedman?",
+      "firstGame": "Guilty Gear Strive",
+      "mostRecent": "Guilty Gear Strive",
+      "gender": "Unknown",
+      "race": ["Machine"],
+      "origin": "Unknown",
+      "height": 272,
+      "weight": 621
+    },
+    {
+      "id": "goldlewis-dickinson",
+      "name": "Goldlewis Dickinson",
+      "firstGame": "Guilty Gear Strive",
+      "mostRecent": "Guilty Gear Strive",
+      "gender": "Male",
+      "race": ["Human"],
+      "origin": "United States",
+      "height": 214,
+      "weight": 257
+    },
+    {
+      "id": "giovanna",
+      "name": "Giovanna",
+      "firstGame": "Guilty Gear Strive",
+      "mostRecent": "Guilty Gear Strive",
+      "gender": "Female",
+      "race": ["Human"],
+      "origin": "Brazil",
+      "height": 170,
+      "weight": 62
+    },
+    {
+      "id": "nagoriyuki",
+      "name": "Nagoriyuki",
+      "firstGame": "Guilty Gear Strive",
+      "mostRecent": "Guilty Gear Strive",
+      "gender": "Male",
+      "race": ["Vampire"],
+      "origin": "Nigeria",
+      "height": 205,
+      "weight": 96
   }
 ]
-
