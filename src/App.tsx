@@ -87,13 +87,50 @@ export default function App() {
 
             return (
               <tr key={id}>
-                <td>{category ? category.name : id}</td>
-                <td>{category ? category.firstGame : '-'}</td>
-                <td>{category ? category.mostRecent : '-'}</td>
-                <td>{category ? category.gender : '-'}</td>
-                <td>{category ? category.race : '-'}</td>
-                <td>{category ? category.origin : '-'}</td>
+                <td
+                  style={{
+                    backgroundColor: category && category.name === target.name ? 'lightgreen' : 'lightcoral',
+                  }}
+                >
+                  {category ? category.name : '-'}
+                </td>
+                <td
+                  style={{
+                    backgroundColor: category && category.mostRecent === target.mostRecent ? 'lightgreen' : 'lightcoral',
+                  }}
+                >
+                  {category ? category.mostRecent : '-'}
+                </td>
+                <td
+                  style={{
+                    backgroundColor: category && category.firstGame === target.firstGame ? 'lightgreen' : 'lightcoral',
+                  }}
+                >
+                  {category ? category.firstGame : '-'}
+                </td>
+                <td
+                  style={{
+                    backgroundColor: category && category.gender === target.gender ? 'lightgreen' : 'lightcoral',
+                  }}
+                >
+                  {category ? category.gender : '-'}
+                </td>
+                <td
+                  style={{
+                    backgroundColor: category && category.race === target.race ? 'lightgreen' : 'lightcoral',
+                  }}
+                >
+                  {category ? category.race : '-'}
+                </td>
+                <td
+                  style={{
+                    backgroundColor: category && category.origin === target.origin ? 'lightgreen' : 'lightcoral',
+                  }}
+                >
+                  {category ? category.origin : '-'}
+                </td>
               </tr>
+
             )
           })}
         </tbody>
