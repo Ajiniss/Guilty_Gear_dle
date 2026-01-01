@@ -40,11 +40,16 @@ export default function App() {
     <main style={{ padding: 24, maxWidth: 760 }}>
       <h1 style={{ textAlign: "center" }}>Guilty Gear Dle</h1>
 
-      <p>
-        Try: {guesses.length}/{attempts}
-      </p>
+      <div>
+        {won && <h1>You Rock!</h1>}
+        {!won && noAttempts && <h1>DEFAT...</h1>}
+      </div>
 
       <div>
+
+        <h3>Guess The Characters:</h3>
+
+        {/*TODO: le bouton est trop gros*/}
         <select
           value={selectedId}
           onChange={(e) => setSelectedId(e.target.value)}
@@ -60,81 +65,78 @@ export default function App() {
           Go
         </button>
 
+        {/*TODO: mettre les couleurs sur le css*/}
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>First Game</th>
+              <th>Most Recent</th>
+              <th>Gender</th>
+              <th>Race</th>
+              <th>Origin</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {guesses.map((id) => {
+              const category = characters.find((c) => c.id === id)
+
+              return (
+                <tr key={id}>
+                  <td
+                    style={{
+                      backgroundColor: category && category.name === target.name ? 'lightgreen' : 'lightcoral',
+                    }}
+                  >
+                    {category ? category.name : '-'}
+                  </td>
+                  <td
+                    style={{
+                      backgroundColor: category && category.mostRecent === target.mostRecent ? 'lightgreen' : 'lightcoral',
+                    }}
+                  >
+                    {category ? category.mostRecent : '-'}
+                  </td>
+                  <td
+                    style={{
+                      backgroundColor: category && category.firstGame === target.firstGame ? 'lightgreen' : 'lightcoral',
+                    }}
+                  >
+                    {category ? category.firstGame : '-'}
+                  </td>
+                  <td
+                    style={{
+                      backgroundColor: category && category.gender === target.gender ? 'lightgreen' : 'lightcoral',
+                    }}
+                  >
+                    {category ? category.gender : '-'}
+                  </td>
+                  <td
+                    style={{
+                      backgroundColor: category && category.race === target.race ? 'lightgreen' : 'lightcoral',
+                    }}
+                  >
+                    {category ? category.race : '-'}
+                  </td>
+                  <td
+                    style={{
+                      backgroundColor: category && category.origin === target.origin ? 'lightgreen' : 'lightcoral',
+                    }}
+                  >
+                    {category ? category.origin : '-'}
+                  </td>
+                </tr>
+
+              )
+            })}
+          </tbody>
+        </table>
       </div>
 
-      <div>
-        {won && <p> You Win</p>}
-        {!won && noAttempts && <p>No more Try</p>}
-      </div>
-
-      <h3>History</h3>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>First Game</th>
-            <th>Most Recent</th>
-            <th>Gender</th>
-            <th>Race</th>
-            <th>Origin</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {guesses.map((id) => {
-            const category = characters.find((c) => c.id === id)
-
-            return (
-              <tr key={id}>
-                <td
-                  style={{
-                    backgroundColor: category && category.name === target.name ? 'lightgreen' : 'lightcoral',
-                  }}
-                >
-                  {category ? category.name : '-'}
-                </td>
-                <td
-                  style={{
-                    backgroundColor: category && category.mostRecent === target.mostRecent ? 'lightgreen' : 'lightcoral',
-                  }}
-                >
-                  {category ? category.mostRecent : '-'}
-                </td>
-                <td
-                  style={{
-                    backgroundColor: category && category.firstGame === target.firstGame ? 'lightgreen' : 'lightcoral',
-                  }}
-                >
-                  {category ? category.firstGame : '-'}
-                </td>
-                <td
-                  style={{
-                    backgroundColor: category && category.gender === target.gender ? 'lightgreen' : 'lightcoral',
-                  }}
-                >
-                  {category ? category.gender : '-'}
-                </td>
-                <td
-                  style={{
-                    backgroundColor: category && category.race === target.race ? 'lightgreen' : 'lightcoral',
-                  }}
-                >
-                  {category ? category.race : '-'}
-                </td>
-                <td
-                  style={{
-                    backgroundColor: category && category.origin === target.origin ? 'lightgreen' : 'lightcoral',
-                  }}
-                >
-                  {category ? category.origin : '-'}
-                </td>
-              </tr>
-
-            )
-          })}
-        </tbody>
-      </table>
+      <p>
+        Try: {guesses.length}/{attempts}
+      </p>
 
       {/*DEBUG*/}
       <h3>Debug</h3>
