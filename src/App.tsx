@@ -15,7 +15,11 @@ export default function App() {
   const [selectedId, setSelectedId] = useState<string>(characters[0]?.id ?? '')
   const [guesses, setGuesses] = useState<string[]>(() => loadGuesses(dayKey))
 
-  const won = guesses.length ? guesses[guesses.length - 1] : null == target.id
+  const won =
+    guesses.length
+      ? guesses[guesses.length - 1] === target.id
+      : false
+
   const noAttempts = guesses.length >= attempts
 
   function addGuess() {
@@ -36,7 +40,7 @@ export default function App() {
 
   return (
     <main style={{ padding: 24, maxWidth: 760 }}>
-      <h1>Guilty Gear Dle</h1>
+      <h1 style={{ textAlign: "center" }}>Guilty Gear Dle</h1>
 
       <p>
         Try: {guesses.length}/{attempts}
@@ -81,5 +85,5 @@ export default function App() {
       <button onClick={reset}>
         Reset
       </button>
-    </main>)
+    </main >)
 }
