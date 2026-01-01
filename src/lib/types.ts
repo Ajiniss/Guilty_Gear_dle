@@ -4,9 +4,9 @@ export type Character = {
   firstGame: string
   mostRecent: string
   gender: string
-  race: string
+  race: string[]
   origin: string
-  height: string
-  weight: string
+  height: number
+  weight: number
   //TODO: changer string to number pour certaines category
 }

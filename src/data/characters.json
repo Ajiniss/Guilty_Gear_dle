@@ -2,51 +2,68 @@
   {
     "id": "sol-badguy",
     "name": "Sol Badguy",
-    "firstGame": "GG1",
+    "firstGame": "GGML",
     "mostRecent": "Guilty Gear Strive",
     "gender": "Male",
-    "race": "Gear",
+    "race": ["Gear"],
     "origin": "United States",
-    "height": "184",
-    "weight": "74"
+    "height": 184,
+    "weight": 74
   },
-
   {
-  "id": "ky-kiske",
-  "name": "Ky Kiske",
-  "firstGame": "GG1",
-  "mostRecent": "Guilty Gear Strive",
-  "gender": "Male",
-  "race": "Humane",
-  "origin": "France",
-  "height": "178",
-  "weight": "58"
+    "id": "ky-kiske",
+    "name": "Ky Kiske",
+    "firstGame": "GGML",
+    "mostRecent": "Guilty Gear Strive",
+    "gender": "Male",
+    "race": ["Human", "Gear"],
+    "origin": "France",
+    "height": 178,
+    "weight": 58
   },
-
-   {
-  "id": "may",
-  "name": "May",
-  "firstGame": "GG1",
-  "mostRecent": "Guilty Gear Strive",
-  "gender": "Female",
-  "race": "Humane",
-  "origin": "Unknown",
-  "height": "158",
-  "weight": "49"
+  {
+    "id": "may",
+    "name": "May",
+    "firstGame": "GGML",
+    "mostRecent": "Guilty Gear Strive",
+    "gender": "Female",
+    "race": ["Human"],
+    "origin": "Unknown",
+    "height": 158,
+    "weight": 49
   },
-
-   {
-  "id": "baldhead",
-  "name": "Dr. Baldhead",
-  "firstGame": "GG1",
-  "mostRecent": "Guilty Gear Strive",
-  "gender": "Male",
-  "race": "Humane",
-  "origin": "China",
-  "height": "282",
-  "weight": "55"
+  {
+    "id": "baldhead",
+    "name": "Dr. Baldhead",
+    "firstGame": "GGML",
+    "mostRecent": "Guilty Gear Strive",
+    "gender": "Male",
+    "race": ["Human"],
+    "origin": "China",
+    "height": 282,
+    "weight": 55
+  },
+  {
+    "id": "pot",
+    "name": "Potemkin",
+    "firstGame": "GGML",
+    "mostRecent": "Guilty Gear Strive",
+    "gender": "Male",
+    "race": ["Human"],
+    "origin": "Zepp",
+    "height": 245,
+    "weight": 1212
+  },
+  {
+    "id": "chipp",
+    "name": "Chipp Zanuff",
+    "firstGame": "GGML",
+    "mostRecent": "Guilty Gear Strive",
+    "gender": "Male",
+    "race": ["Human"],
+    "origin": "United States",
+    "height": 183,
+    "weight": 67
   }
-
- 
 ]
 
