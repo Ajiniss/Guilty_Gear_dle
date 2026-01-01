@@ -1,11 +1,11 @@
 export type Character = {
   id: string
-  name: string
+  name: string[]
   firstGame: string
   mostRecent: string
-  gender: string
+  gender: string[]
   race: string[]
-  origin: string
+  origin: string[]
   height: number
   weight: number
   //TODO: changer string to number pour certaines category

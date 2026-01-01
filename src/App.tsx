@@ -1,11 +1,31 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { characters } from './lib/data'
 import { dayKeyLoad } from './lib/day'
 import { dailyCharacter } from './lib/daily'
 import { loadGuesses, saveGuesses } from './lib/storage'
 import './App.css'
+import bgm from './assets/theme.mp3'
 
 export default function App() {
+
+  //Pour la zic
+  const audioRef = useRef<HTMLAudioElement | null>(null)
+
+  useEffect(() => {
+    const a = audioRef.current
+    if (!a) return
+
+    const start = () => {
+      a.volume = 0.3
+      a.play().catch(() => { })
+      window.removeEventListener('pointerdown', start)
+    }
+
+    window.addEventListener('pointerdown', start)
+  }, [])
+
+
+
   type Status = 'yes' | 'mid' | 'no'
 
   const yes = 'lightgreen'
@@ -86,11 +106,13 @@ export default function App() {
 
   return (
     <main className="page">
+      <audio ref={audioRef} src={bgm} loop />
+
       <h1 className="title">Guilty Gear Dle</h1>
 
       <div className="status">
-        {won && <h2>You Rock!</h2>}
-        {!won && noAttempts && <h2>DEFEAT...</h2>}
+        {won && <h1>You Rock!</h1>}
+        {!won && noAttempts && <h1>DEFEAT...</h1>}
       </div>
 
       <div className="content">
