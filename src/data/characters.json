@@ -7,7 +7,10 @@
     "gender": "Male",
     "race": "Gear",
     "origin": "United States"
+    "height": "184"
+    "weight": "74"
   },
+
   {
   "id": "ky-kiske",
   "name": "Ky Kiske",
@@ -16,6 +19,32 @@
   "gender": "Male",
   "race": "Humane",
   "origin": "France"
+  "height": "178"
+  "weight": "58"
+  },
+
+   {
+  "id": "may",
+  "name": "May",
+  "firstGame": "GG1",
+  "mostRecent": "Guilty Gear Strive",
+  "gender": "Female",
+  "race": "Humane",
+  "origin": "Unknown"
+  "height": "158"
+  "weight": "49"
+  },
+
+   {
+  "id": "baldhead",
+  "name": "Dr. Baldhead",
+  "firstGame": "GG1",
+  "mostRecent": "Guilty Gear Strive",
+  "gender": "Male",
+  "race": "Humane",
+  "origin": "China"
+  "height": "282"
+  "weight": "55"
   }
 ]
 

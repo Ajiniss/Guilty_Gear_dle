@@ -6,4 +6,7 @@ export type Character = {
   gender: string
   race: string
   origin: string
+  height: string
+  weight: string
+  //TODO: changer string to number pour certaines category
 }
