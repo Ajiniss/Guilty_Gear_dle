@@ -99,11 +99,11 @@ export default function App() {
     saveGuesses(dayKey, next)
   }
 
-  function reset() {
-    const next: string[] = []
-    setGuesses(next)
-    saveGuesses(dayKey, next)
-  }
+  // function reset() {
+  //   const next: string[] = []
+  //   setGuesses(next)
+  //   saveGuesses(dayKey, next)
+  // }
 
   return (
     <main className="page">
@@ -114,6 +114,10 @@ export default function App() {
       <div className="status">
         {won && <h1>You Rock!</h1>}
         {!won && noAttempts && <h1>DEFEAT...</h1>}
+      </div>
+
+      <div className='status'>
+        {!won && noAttempts && <h2>The characters was {target.name}</h2>}
       </div>
 
       <div className="content">
@@ -210,12 +214,12 @@ export default function App() {
           Try: {guesses.length}/{attempts}
         </p>
 
-        <div className="debug">
-          <h3>Debug</h3>
-          <p>Day key: {dayKey}</p>
-          <p>Target id: {target.id}</p>
-          <button onClick={reset}>Reset</button>
-        </div>
+        {/* <div className="debug"> */}
+        {/*   <h3>Debug</h3> */}
+        {/*   <p>Day key: {dayKey}</p> */}
+        {/*   <p>Target id: {target.id}</p> */}
+        {/*   <button onClick={reset}>Reset</button> */}
+        {/* </div> */}
       </div>
     </main>
   )
