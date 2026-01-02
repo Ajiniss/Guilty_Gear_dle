@@ -32,7 +32,8 @@ export default function App() {
   const mid = 'orange'
   const no = 'lightcoral'
 
-  const dayKey = dayKeyLoad()
+  // const dayKey = dayKeyLoad()
+  const dayKey = "1/3/2026"
   const target = dailyCharacter(dayKey)
   const attempts = 10
 
@@ -108,7 +109,7 @@ export default function App() {
     <main className="page">
       <audio ref={audioRef} src={bgm} loop />
 
-      <h1 className="title">Guilty Gear Dle</h1>
+      <h1 className="title">Guilty Geardle</h1>
 
       <div className="status">
         {won && <h1>You Rock!</h1>}
@@ -209,12 +210,12 @@ export default function App() {
           Try: {guesses.length}/{attempts}
         </p>
 
-        <div className="debug">
-          <h3>Debug</h3>
-          <p>Day key: {dayKey}</p>
-          <p>Target id: {target.id}</p>
-          <button onClick={reset}>Reset</button>
-        </div>
+        {/* <div className="debug"> */}
+        {/*   <h3>Debug</h3> */}
+        {/*   <p>Day key: {dayKey}</p> */}
+        {/*   <p>Target id: {target.id}</p> */}
+        {/*   <button onClick={reset}>Reset</button> */}
+        {/* </div> */}
       </div>
     </main>
   )
