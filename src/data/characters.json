@@ -180,7 +180,7 @@
 },
 
 {
-"id": "dr.-baldhead",
+"id": "baldhead",
 "name": ["Dr. Baldhead"],
 "firstGame": "Guilty Gear ML",
 "mostRecent": "Guilty Gear ML",
@@ -192,7 +192,7 @@
 },
 
 {
-"id": "dr.-paradigm",
+"id": "dr-paradigm",
 "name": ["Dr. Paradigm"],
 "firstGame": "Guilty Gear 2",
 "mostRecent": "Guilty Gear Strive",
@@ -320,7 +320,7 @@
 "race": ["Human"],
 "origin": ["United States"],
 "height": 184,
-"weight": 072
+"weight": 72
 },
 
   {
@@ -391,8 +391,8 @@
 "gender": ["Female"],
 "race": ["Human"],
 "origin": ["Poland"],
-"height": "Unknown"
-"weight": "Unknown"
+"height": 0,
+"weight": 0
 },
 
 {
@@ -632,7 +632,7 @@
 "race": ["Human"],
 "origin": ["Spain"],
 "height": 181,
-"weight": 068
+"weight": 68
 }
 
 ]

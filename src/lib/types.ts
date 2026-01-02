@@ -8,5 +8,4 @@ export type Character = {
   origin: string[]
   height: number
   weight: number
-  //TODO: changer string to number pour certaines category
 }
