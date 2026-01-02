@@ -7,8 +7,6 @@ import './App.css'
 import bgm from './assets/theme.mp3'
 
 export default function App() {
-
-  //Pour la zic
   const audioRef = useRef<HTMLAudioElement | null>(null)
 
   useEffect(() => {
@@ -24,16 +22,12 @@ export default function App() {
     window.addEventListener('pointerdown', start)
   }, [])
 
-
-
   type Status = 'yes' | 'mid' | 'no'
-
   const yes = 'lightgreen'
   const mid = 'orange'
   const no = 'lightcoral'
 
   const dayKey = dayKeyLoad()
-  // const dayKey = "1/3/2026"
   const target = dailyCharacter(dayKey)
   const attempts = 10
 
@@ -76,6 +70,11 @@ export default function App() {
     return matchScalar(guess, targetV)
   }
 
+  function matchMaybe(guess: unknown, targetV: unknown): Status | 'na' {
+    if (guess == null || targetV == null) return 'na'
+    return matchAny(guess, targetV)
+  }
+
   function arrowNum(guess: unknown, targetV: unknown): string {
     const g = Number(guess)
     const t = Number(targetV)
@@ -93,17 +92,18 @@ export default function App() {
   function addGuess() {
     if (!selectedId) return
     if (won || noAttempts) return
+    if (guesses.includes(selectedId)) return
 
     const next = [...guesses, selectedId]
     setGuesses(next)
     saveGuesses(dayKey, next)
   }
 
-  // function reset() {
-  //   const next: string[] = []
-  //   setGuesses(next)
-  //   saveGuesses(dayKey, next)
-  // }
+  function reset() {
+    const next: string[] = []
+    setGuesses(next)
+    saveGuesses(dayKey, next)
+  }
 
   return (
     <main className="page">
@@ -116,8 +116,8 @@ export default function App() {
         {!won && noAttempts && <h1>DEFEAT...</h1>}
       </div>
 
-      <div className='status'>
-        {!won && noAttempts && <h2>The characters was {target.name}</h2>}
+      <div className="status">
+        {!won && noAttempts && <h2>The character was {target.name}</h2>}
       </div>
 
       <div className="content">
@@ -166,15 +166,13 @@ export default function App() {
                 const raceS = matchAny(category?.race, target.race)
                 const originS = matchAny(category?.origin, target.origin)
 
-                const heightS = matchAny(category?.height, target.height)
-                const weightS = matchAny(category?.weight, target.weight)
+                const heightS = matchMaybe(category?.height, target.height)
+                const weightS = matchMaybe(category?.weight, target.weight)
 
-                const heightText = category
-                  ? `${arrowNum(category.height, target.height)}${category.height}cm`
-                  : '-'
-                const weightText = category
-                  ? `${arrowNum(category.weight, target.weight)}${category.weight}kg`
-                  : '-'
+                const heightText =
+                  category?.height == null ? '?' : `${arrowNum(category.height, target.height)}${category.height}cm`
+                const weightText =
+                  category?.weight == null ? '?' : `${arrowNum(category.weight, target.weight)}${category.weight}kg`
 
                 return (
                   <tr key={id}>
@@ -200,9 +198,21 @@ export default function App() {
                       {category ? renderValue(category.origin) : '-'}
                     </td>
 
-                    <td style={{ backgroundColor: bg(heightS) }}>{heightText}</td>
+                    <td
+                      style={{
+                        backgroundColor: heightS === 'na' ? 'rgba(255,255,255,0.25)' : bg(heightS),
+                      }}
+                    >
+                      {heightText}
+                    </td>
 
-                    <td style={{ backgroundColor: bg(weightS) }}>{weightText}</td>
+                    <td
+                      style={{
+                        backgroundColor: weightS === 'na' ? 'rgba(255,255,255,0.25)' : bg(weightS),
+                      }}
+                    >
+                      {weightText}
+                    </td>
                   </tr>
                 )
               })}
@@ -213,14 +223,15 @@ export default function App() {
         <p className="tries">
           Try: {guesses.length}/{attempts}
         </p>
-
-        {/* <div className="debug"> */}
-        {/*   <h3>Debug</h3> */}
-        {/*   <p>Day key: {dayKey}</p> */}
-        {/*   <p>Target id: {target.id}</p> */}
-        {/*   <button onClick={reset}>Reset</button> */}
-        {/* </div> */}
       </div>
+
+      <div className="debug">
+        <h3>Debug</h3>
+        {/* <p>Day key: {dayKey}</p> */}
+        {/* <p>Target id: {target.id}</p> */}
+        <button onClick={reset}>Reset</button>
+      </div>
+
     </main>
   )
 }

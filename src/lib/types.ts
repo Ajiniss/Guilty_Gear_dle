@@ -6,6 +6,6 @@ export type Character = {
   gender: string[]
   race: string[]
   origin: string[]
-  height: number
-  weight: number
+  height?: number
+  weight?: number
 }

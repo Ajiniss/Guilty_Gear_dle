@@ -27,7 +27,7 @@
 "id": "answer",
 "name": ["Answer"],
 "firstGame": "Guilty Gear Xrd Series",
-"mostRecent": "Guilty Gear Strive",
+"mostRecent": "Guilty Gear Xrd Series",
 "gender": ["Male"],
 "race": ["Human"],
 "origin": ["Eastern Chipp Kingdom"],
@@ -138,9 +138,7 @@
 "mostRecent": "Guilty Gear XX",
 "gender": ["Male"],
 "race": ["Human"],
-"origin": ["Unknown"],
-"height": 0,
-"weight": 0
+"origin": ["Unknown"]
 },
 
 {
@@ -150,9 +148,7 @@
 "mostRecent": "Guilty Gear Strive",
 "gender": ["Male"],
 "race": ["Human"],
-"origin": ["Unknown"],
-"height": 0,
-"weight": 0
+"origin": ["Unknown"]
 },
 
 {
@@ -183,7 +179,7 @@
 "id": "dr-paradigm",
 "name": ["Dr. Paradigm"],
 "firstGame": "Guilty Gear 2",
-"mostRecent": "Guilty Gear Strive",
+"mostRecent": "Guilty Gear Vastedge XT",
 "gender": ["Male"],
 "race": ["Gear"],
 "origin": ["Ohio", "United States"],
@@ -199,8 +195,7 @@
 "gender": ["Female"],
 "race": ["Valentine"],
 "origin": ["Backyard"],
-"height": 168,
-"weight": 0
+"height": 168
 },
 
 {
@@ -222,9 +217,7 @@
 "mostRecent": "Guilty Gear Strive",
 "gender": ["Male"],
 "race": ["Human"],
-"origin": ["Unknown"],
-"height": 0,
-"weight": 0
+"origin": ["Unknown"]
 },
 
 {
@@ -283,8 +276,7 @@
 "gender": ["Female"],
 "race": ["Human"],
 "origin": ["China"],
-"height": 163,
-"weight": 0
+"height": 163
 },
 
 {
@@ -303,7 +295,7 @@
 "id": "justice",
 "name": ["Justice"],
 "firstGame": "Guilty Gear ML",
-"mostRecent": "Guilty Gear Xrd Series",
+"mostRecent": "Guilty Gear XX",
 "gender": ["Female"],
 "race": ["Gear"],
 "origin": ["United States"],
@@ -315,7 +307,7 @@
 "id": "kliff-undersn",
 "name": ["Kliff Undersn"],
 "firstGame": "Guilty Gear ML",
-"mostRecent": "Guilty Gear Strive",
+"mostRecent": "Guilty Gear XX",
 "gender": ["Male"],
 "race": ["Human"],
 "origin": ["Switzerland"],
@@ -327,7 +319,7 @@
 "id": "kum-haehyun",
 "name": ["Kum Haehyun"],
 "firstGame": "Guilty Gear Xrd Series",
-"mostRecent": "Guilty Gear Strive",
+"mostRecent": "Guilty Gear Xrd Series",
 "gender": ["Female"],
 "race": ["Human"],
 "origin": ["Korea"],
@@ -366,9 +358,7 @@
 "mostRecent": "Guilty Gear Strive",
 "gender": ["Female"],
 "race": ["Human"],
-"origin": ["Poland"],
-"height": 0,
-"weight": 0
+"origin": ["Poland"]
 },
 
 {
@@ -378,9 +368,7 @@
 "mostRecent": "Guilty Gear Strive",
 "gender": ["Male"],
 "race": ["Human"],
-"origin": ["Unknown"],
-"height": 0,
-"weight": 0
+"origin": ["Unknown"]
 },
 
 {
@@ -462,9 +450,7 @@
 "mostRecent": "Guilty Gear Strive",
 "gender": ["Male"],
 "race": ["Robot"],
-"origin": ["Unknown"],
-"height": 0,
-"weight": 0
+"origin": ["Unknown"]
 },
 
 {
@@ -558,9 +544,7 @@
 "mostRecent": "Guilty Gear Strive",
 "gender": ["Male"],
 "race": ["Human"],
-"origin": ["United States"],
-"height": 0,
-"weight": 0
+"origin": ["United States"]
 },
 
 {
