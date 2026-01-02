@@ -12,18 +12,6 @@
 },
 
 {
-"id": "alyssa",
-"name": ["Alyssa"],
-"firstGame": "Guilty Gear Xrd Series",
-"mostRecent": "Guilty Gear Strive",
-"gender": ["Female"],
-"race": ["Human"],
-"origin": ["Unknown"],
-"height": 0,
-"weight": 0
-},
-
-{
 "id": "anji-mito",
 "name": ["Anji Mito"],
 "firstGame": "Guilty Gear X",
@@ -212,18 +200,6 @@
 "race": ["Valentine"],
 "origin": ["Backyard"],
 "height": 168,
-"weight": 0
-},
-
-  {
-"id": "erica-bartholomew",
-"name": ["Erica Bartholomew"],
-"firstGame": "Guilty Gear Strive",
-"mostRecent": "Guilty Gear Strive",
-"gender": ["Female"],
-"race": ["Human"],
-"origin": ["Unknown"],
-"height": 0,
 "weight": 0
 },
 
@@ -480,18 +456,6 @@
 },
 
 {
-"id": "randy",
-"name": ["Randy"],
-"firstGame": "Guilty Gear Xrd Series",
-"mostRecent": "Guilty Gear Strive",
-"gender": ["Male"],
-"race": ["Human"],
-"origin": ["Unknown"],
-"height": 0,
-"weight": 0
-},
-
-{
 "id": "robo-ky",
 "name": ["Robo-Ky"],
 "firstGame": "Guilty Gear X",
@@ -549,18 +513,6 @@
 "origin": ["Switzerland"],
 "height": 185,
 "weight": 73
-},
-
-{
-"id": "tsuyoshi",
-"name": ["Tsuyoshi"],
-"firstGame": "Guilty Gear ML",
-"mostRecent": "Guilty Gear ML",
-"gender": ["male"],
-"race": ["Human"],
-"origin": ["Japan"],
-"height": 0,
-"weight": 0
 },
 
 {
