@@ -99,11 +99,11 @@ export default function App() {
     saveGuesses(dayKey, next)
   }
 
-  function reset() {
-    const next: string[] = []
-    setGuesses(next)
-    saveGuesses(dayKey, next)
-  }
+  // function reset() {
+  //   const next: string[] = []
+  //   setGuesses(next)
+  //   saveGuesses(dayKey, next)
+  // }
 
   return (
     <main className="page">
