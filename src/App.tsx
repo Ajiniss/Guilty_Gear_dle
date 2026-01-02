@@ -32,8 +32,8 @@ export default function App() {
   const mid = 'orange'
   const no = 'lightcoral'
 
-  // const dayKey = dayKeyLoad()
-  const dayKey = "1/3/2026"
+  const dayKey = dayKeyLoad()
+  // const dayKey = "1/3/2026"
   const target = dailyCharacter(dayKey)
   const attempts = 10
 
